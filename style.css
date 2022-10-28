@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: hsl(224, 21%, 14%);
+}
+
+body {
+  background-color: hsl(205, 33%, 90%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #fff;
+  max-width: 37.5rem;
+  margin: 10rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(219, 13%, 31%);
+}
+.notification {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+span {
+  background-color: hsl(219, 85%, 26%);
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 0.8rem;
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
+}
+
+.all-read {
+  font-size: 1.4rem;
+}
+.avatar {
+  width: 5rem;
+  margin-left: 1.5rem;
+}
+.commented-pic {
+  width: 5rem;
+}
+.notification-txt {
+  font-size: 1.45rem;
+  color: hsl(220, 10%, 34%);
+}
+
+.time {
+  font-size: 1.3rem;
+}
+
+.notif-time {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.4rem;
+  padding: 1rem;
+  /* background-color: hsl(210, 57%, 95%); */
+}
+
+.person {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.person1 {
+  margin-top: 3rem;
+}
+.message-container {
+  margin-top: 2rem;
+}
+.message {
+  font-size: 1.3rem;
+  color: hsl(219, 12%, 42%);
+  border: 1px solid hsl(205, 33%, 90%);
+  width: 82%;
+  padding: 1rem;
+  margin-left: 6rem;
+}
+
+.message:hover {
+  background-color: hsl(211, 68%, 94%);
+  cursor: pointer;
+}
+
+.bold:hover {
+  cursor: pointer;
+  color: hsl(219, 95%, 39%);
+}
+
+.unread {
+  background-color: hsl(211, 68%, 94%);
+  border-radius: 1rem;
+}
+
+.unread p:first-of-type::after {
+  content: "";
+  background-color: red;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  right: 25rem;
+}
+
+@media (min-width: 800px) {
+  .container {
+    max-width: 800px;
+    width: 100%;
+    padding: 6rem;
+  }
+
+  .person:hover {
+    cursor: pointer;
+  }
+
+  .message {
+    width: 91.3%;
+  }
+}
